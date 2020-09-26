@@ -1,0 +1,9 @@
+{
+  "enablePullDownRefresh": false,
+  "navigationBarTitleText": "登录",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#FF6145",
+  "usingComponents": {
+    "van-checkbox": "@vant/weapp/checkbox/index"
+  }
+}

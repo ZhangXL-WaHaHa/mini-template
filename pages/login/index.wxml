@@ -1,0 +1,23 @@
+<!--pages/login/index.wxml-->
+<view class="center">
+    <image src="/assets/images/icon-logo.png"></image>
+</view>
+<view class="text center">致力成为清洁能源领域中用户最信赖的领导品牌</view>
+
+<view class="mg-20 mt-100">
+    <van-button block round color="linear-gradient(270deg,rgba(255,97,69,1) 0%,rgba(252,138,2,1) 100%);"
+                bindgetuserinfo='Success' open-type="getUserInfo" wx:if="{{checked}}">
+        <text>微信登录</text>
+    </van-button>
+    <van-button block round color="linear-gradient(270deg,rgba(255,97,69,1) 0%,rgba(252,138,2,1) 100%);"
+                bindtap='cancelAuth' wx:else>
+        <text>微信登录</text>
+    </van-button>
+</view>
+
+
+<view class="statement">
+    <van-checkbox icon-size="13px" checked-color="#FF6145" value="{{ checked }}" bind:change="onCbChange"/>
+    <text class="statement-text">登录即表示同意</text>
+    <text class="agreement-text" bindtap="viewAgreement">《AMITIME·热立方用户使用协议》</text>
+</view>

@@ -1,0 +1,27 @@
+/* components/shareImageModal/index.wxss */
+.share-qrcode-box {
+    text-align: center;
+}
+
+.share-qrcode-box .share-title {
+    font-size: 14pt;
+    text-align: left;
+    color: rgba(0, 30, 65, 0.64);
+}
+
+.share-qrcode-header {
+}
+
+.share-qrcode-box .icon-close {
+    float: right;
+    margin-top: 4pt;
+    color: #bbb;
+    font-size: 13pt;
+    margin-right: 15px;
+}
+
+.share-qrcode-box .share-qrcode {
+    padding: 50rpx;
+    width: 400rpx;
+    height: auto;
+}

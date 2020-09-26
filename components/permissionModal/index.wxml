@@ -1,0 +1,35 @@
+<!--components/loginModal/loginModal.wxml-->
+
+<view class='mask' wx:if='{{isShow}}'>
+    <view class='modal'>
+        <view class='title' wx:if='{{title}}'>{{title}}</view>
+
+        <view class='content'>
+            <view wx:if='{isShowPermTip}' class='perm-tip'>{{permTip}}</view>
+            <view class='perm-title'>申请获取</view>
+            <view class='perm-content'>
+                {{content}}
+            </view>
+        </view>
+        <view class='btns'>
+            <button class='cancel' bindtap='Cancel' wx:if='{{showCancel}}'>取消</button>
+            <!-- 获取联系方式 -->
+            <button wx:if="{{open_type == 'contact'}}" class='success' bindcontact='Success' open-type='{{open_type}}'>
+                {{confirmText}}
+            </button>
+            <!-- 获取用户信息 -->
+            <button wx:elif="{{open_type == 'getUserInfo'}}" class='success' bindgetuserinfo='Success'
+                    open-type='{{open_type}}'>{{confirmText}}
+            </button>
+            <!-- 获取手机号 -->
+            <button wx:elif="{{open_type == 'getPhoneNumber'}}" class='success' bindgetphonenumber='Success'
+                    open-type='{{open_type}}'>{{confirmText}}
+            </button>
+            <!-- 打开授权设置页 -->
+            <button wx:elif="{{open_type == 'openSetting'}}" class='success' bindtap="close" bindopensetting='Success'
+                    open-type='{{open_type}}'>{{confirmText}}
+            </button>
+            <button wx:else class='success' bindtap='Success' open-type='{{open_type}}'>{{confirmText}}</button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,155 @@
+{
+  "description": "项目配置文件",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": []
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.13.0",
+  "appid": "wxce34079f80b15a54",
+  "projectname": "mini-aimeitai",
+  "cloudfunctionTemplateRoot": "",
+  "watchOptions": {
+    "ignore": []
+  },
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "scripts": {},
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "plugin": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": -1,
+      "list": [
+        {
+          "id": -1,
+          "name": "我的",
+          "pathName": "pages/me/me",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 1,
+          "name": "产品",
+          "pathName": "pages/product/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "产品详情",
+          "pathName": "pages/product/detail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "选型",
+          "pathName": "pages/select/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "留言反馈",
+          "pathName": "pages/me/feedBack/feedBack",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "关于",
+          "pathName": "pages/me/about/about",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 6,
+          "name": "方案结果",
+          "pathName": "pages/select/select-result/index",
+          "query": "id= 119442136126066688",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "图表",
+          "pathName": "pages/common/multiCharts/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "产品详情",
+          "pathName": "pages/product/productDetail/index",
+          "query": "id=106449211914063872",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "案例上传",
+          "pathName": "pages/me/uploadCase/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "历史方案",
+          "pathName": "pages/me/caseList/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

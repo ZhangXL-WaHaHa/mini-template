@@ -1,0 +1,5 @@
+<!-- 基础面板容器，默认10px圆角、30rpx内边距, 20rpx外边距，可选是否显示阴影 -->
+<view class="panel {{showShadow ? 'panel-shadow' : ''}}"
+      style="padding-left: {{(pdLeft ? pdLeft : pdLeftRight ? pdLeftRight : pd)   + 'rpx'}};padding-right: {{(pdRight ? pdRight : pdLeftRight ? pdLeftRight : pd)   + 'rpx'}};padding-top: {{(pdTop ? pdTop : pdTopBottom ? pdTopBottom  : pd)   + 'rpx'}};padding-bottom: {{(pdBottom ? pdBottom : pdTopBottom ? pdTopBottom  : pd)  + 'rpx'}};">
+    <slot></slot>
+</view>

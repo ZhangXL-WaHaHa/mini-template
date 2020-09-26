@@ -1,0 +1,23 @@
+<swiper indicator-dots="{{indicatorDots}}"
+        current="{{currentIndex}}"
+        autoplay="{{autoplay}}"
+        interval="{{interval}}"
+        duration="{{duration}}"
+        bindchange="swiperChange"
+        circular="true"
+        indicator-color="#fefefe"
+        indicator-active-color="#EE701D"
+        style='height:{{swiperHeight}};border-radius: {{borderRadius}};overflow: hidden;transform: translateY(0);'>
+    <block wx:for="{{imgUrls}}" wx:for-index="index" wx:key="key">
+        <swiper-item>
+            <image src="{{item}}"
+                   bindtap="tapSwiperItem"
+                   class="slide-image"
+                   data-index="{{index}}"
+                   bindload='calHeight'
+                   mode="aspectFill"
+                   style="border-radius: {{borderRadius}}"
+            />
+        </swiper-item>
+    </block>
+</swiper>

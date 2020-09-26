@@ -1,0 +1,39 @@
+/* pages/login/index.wxss */
+image {
+    width: 264rpx;
+    height: 264rpx;
+    margin-top: 166rpx;
+}
+
+.text {
+    color: #999999;
+    font-size: 9pt;
+    margin-top: 24rpx;
+}
+.mg-20 {
+    margin: 0 30rpx;
+}
+
+.statement {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100rpx;
+    margin-top: 48rpx;
+    justify-content: center;
+}
+
+.statement-text {
+    color: #333333;
+    font-size: 9pt;
+    margin-left: 8rpx;
+}
+.agreement-text {
+    color: #FF6145;
+    font-size: 9pt;
+}
+.mt-100 {
+    margin-top: 100rpx;
+}
+.center {
+    text-align: center;
+}

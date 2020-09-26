@@ -1,0 +1,21 @@
+<van-popup show="{{ show }}" custom-style="border-radius:5px;">
+    <view>
+        <view class="share-qrcode-box">
+            <view class="share-qrcode-header" style="margin-top: 10px;text-align: left;margin-left: 15px;">
+                <text class="share-title">{{title}}</text>
+                <van-icon name="close"
+                          class='icon-close'
+                          bindtap="tapCloseShowShare"></van-icon>
+            </view>
+
+            <image class="share-qrcode"
+                   src="{{url}}"
+                   mode="widthFix"></image>
+
+            <view style="margin-bottom: 30px;margin-top: 5px;">
+                <van-button plain type="primary" size="normal" bind:click="clickSaveQrCode">{{btnText}}</van-button>
+            </view>
+        </view>
+    </view>
+
+</van-popup>
